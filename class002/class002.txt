@@ -1,0 +1,6 @@
+
+Unidades:
+
+- Absoluta: La unidad se mantendrea constante
+- Relativa: La unidad va a cambiar dependiendo de ciertos parametros
+

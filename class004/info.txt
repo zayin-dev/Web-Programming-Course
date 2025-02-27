@@ -1,0 +1,19 @@
+Estrella de kleen:
+    Los estilos que se agregen a esta etiqueta 
+    seran agregados a todos los elemetos del documento
+    HTML
+
+position 
+    al ser de tipo relative, los atributos tendran 
+    caracteristicas relativas a esta. Al ser absoluta,
+    tendran todas la misma caracteristica
+
+Barra de navegacion
+    Sirven para desplazarsea otra parte dentro 
+    del mismo documento
+
+selector > selector
+    Se aplican los atributos al elemento que sea hijo
+    directo del otro
+
+Investigar: iframe

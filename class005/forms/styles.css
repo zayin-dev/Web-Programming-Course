@@ -1,0 +1,19 @@
+
+#wrap {
+    position: absolute;
+    width: 50;
+    /* border: 2px solid crimson; */
+    height: 40vmax;
+}
+
+form {
+    position: absolute;
+    height: 90%;
+    width: 98%;
+    border: 2px solid crimson;
+}
+
+.pie {
+    display: flex;
+    justify-content: space-around;
+}

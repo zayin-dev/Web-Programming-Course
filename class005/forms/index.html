@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <form action="#" autocomplete="on">
+            <fieldset>
+                <legend>Datos Personales:</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" size="30%" placeholder="nombre de pila"><br/>
+                <label>Apellido:</label><br/>
+                <input type="text" name="apelldo" size="25%" placeholder="primer apellido"><br/>
+                <label>Fecha Nacimiento:</label><br/>
+                <input type="date" name="fechaNto" size="25%"><br/>
+                <label>Fecha y hora de Nacimiento</label><br/>
+                <input type="datetime.local" name="user_time"><br/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Uso de internet</legend>
+                <label>Usa internet mas de 8 horas diarias</label><br>
+                    <label>Si<input type="radio" name="uso" value="1" checked/>
+                    </label>
+                    <label for="uso">No</label><input type="radio" id="uso" value="2"/>
+            </fieldset>
+            <br/>
+
+            <fieldset>
+                <legend>Deportes preferidos</legend>
+                <label>Tenis</label>
+                <input type="checkbox" name="dep1" checked/>
+                <label>Football</label>
+                <input type="checkbox" name="dep2"/><br/>
+            </fieldset>
+            <br/>    
+
+            <fieldset>
+                <legend>Musica preferida</legend>
+                <select multiple="">
+                    <option selected>tropical</option>
+                    <option>Rock</option>
+                    <option>Romantica</option>
+                </select>
+            </fieldset>
+            
+            <br/>
+
+            <div class="pie">
+                <input type="submit" name="" value="Transmitir"/>
+                <input type="reset"/>
+                <input type="button" value="Click Here" onclick="alert('Hello!')"/>
+                <!-- <label>Cick aqui
+                    <input type="button" name=" " onclick="alert('Hello!')"/>
+                </label> -->
+            </div>
+        </form>
+    </div>
+
+    <br/>
+    <br/>
+
+</body>
+</html>

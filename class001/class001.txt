@@ -1,0 +1,24 @@
+
+El dinamismo en una pagina web se da por su interconexión con una base de datos.
+
+- HTML se encarga de la estructura de los documentos
+- CSS se encarga de los estilos de la pagina
+- JavaScript (JS) se encarga de hacer la pagina "más dinámica"
+
+-- Nota:
+Se puede hacer que una pagina se adapte a cualquier tamaño de pantalla mediante
+el responsive design
+
+HTML: 
+- Es Jerárquico
+- Se maneja por contenedores
+- Los elementos están formados por una etiqueta, sus atributos y el contenido 
+- Algunas etiquetas no se cierran
+- Se le pueden agregar estilos a ciertas etiquetas mediante el atributo 'style'
+- Los estilos se agregan por jerarquía, empezando desde la linea donde se aplico
+
+-- Tarea: 
+investigar 5 elementos de bloque y elementos in-line
+
+Glosario:
+viewport (ventana del navegador)
