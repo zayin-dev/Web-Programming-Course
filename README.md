@@ -1,2 +1,2 @@
 # Web-Programming-Course
-Content of the web programming course (UIS)
+(Some) Content of the web programming course (UIS)
