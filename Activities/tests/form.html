@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div id="cubierta">
+        <h1>Formulario con controles clásicos</h1>
+    <form action="#" autocomplete="on">
+        <fieldset>
+            <legend>Caja de texto:</legend>
+            <label for="caja">Campo de texto:</label><br>
+            <input type="text" id="caja" size="30%" placeholder="puedes colocar texto aqui"><br>
+            <label>Area de texto:</label><br>
+             <textarea id="apellido" name="apellido" rows="4" cols="30" placeholder="puedes colocar texto multilinea"></textarea><br>
+             <label for="password">Contraseña:</label><br>
+             <input type="password" id="password" name="password" size="25%" placeholder="Introduce tu contraseña"><br>
+        </fieldset>
+        <br>
+        
+            <fieldset>
+                <legend>Controles de selección</legend>
+        
+                <label>Lista de selección simple (tipo combo):</label>
+                <select>
+                    <option>Perro</option>
+                    <option selected>Gato</option>
+                    <option>Roedor</option>
+                </select>
+                <br>
+        
+                <label>Lista de selección simple:</label>
+                <select size="3">
+                    <option>Perro</option>
+                    <option>Gato</option>
+                    <option selected>Roedor</option>
+                </select>
+
+                <br>
+        
+             <label>Lista de selección múltiple, puede seleccionar varios (Ctrl + opción):</label>
+                <select multiple size="4">
+                    <option selected>Roedor</option>
+                    <option>Lobo</option>
+                    <option>León</option>
+                </select>
+            
+                <br>
+        
+            
+                <br>
+                <legend>Lista de botones radio:</legend>
+                <label><input type="radio" name="mascota" value="perro"> Perro</label>
+                <label><input type="radio" name="mascota" value="gato"> Gato</label>
+                <label><input type="radio" name="mascota" value="roedor" checked> Roedor</label>
+            
+        
+            <br>
+            
+            
+            <br> <legend>Lista de cajas (checkbox):</legend>
+                <label><input type="checkbox" name="tamaño" value="chico"> Chico</label>
+                <label><input type="checkbox" name="tamaño" value="mediano"> Mediano</label>
+                <label><input type="checkbox" name="tamaño" value="grande" checked> Grande</label>
+            </fieldset>
+        
+            <br>
+        
+            <fieldset>
+                <legend>Botones</legend>
+                <input type="submit" value="Enviar información">
+                <input type="reset" value="Borrar información">
+                <input type="button" value="Botón" onclick="alert('Boton')">
+            </fieldset>
+    </form>
+                  
+    </div>
+</body>
+</html>

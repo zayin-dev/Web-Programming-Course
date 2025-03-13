@@ -1,0 +1,17 @@
+.pie{
+   display: flex;
+   justify-content: space-around;
+
+}
+form{
+    margin-top: 50%;
+}
+#cubierta {
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    text-align: left;
+}

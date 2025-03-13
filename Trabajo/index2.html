@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navbar con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+            position: relative;
+        }
+        footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .img-fluid {
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            filter: invert(100%);
+        }
+        .overlay-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            cursor: pointer;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="py-3 d-flex align-items-center">
+        <img src="uis_logo.jpg" alt="Logo UIS" width="100px" class="ms-3">
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MiSitio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container mt-4 position-relative">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="Messi.png" class="img-fluid" alt="Messi" onclick="cambiarImagen('Messi.png')">
+                <p>Messi</p>
+            </div>
+            <div class="col-md-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="fruta1.jpg" class="d-block w-100" alt="Fruta 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fruta2.jpg" class="d-block w-100" alt="Fruta 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fruta3.jpg" class="d-block w-100" alt="Fruta 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+                <img src="messi.jpg" id="overlayImage" class="overlay-image" alt="Imagen sobrepuesta" onclick="cambiarImagen('messi.jpg')">
+            </div>
+            <div class="col-md-3">
+                <img src="bucaramanga.jpg" class="img-fluid" alt="Mapa de Bucaramanga" onclick="window.open('https://www.google.com/maps?q=Bucaramanga', '_blank')">
+                <p>Bucaramanga (Clic para ver en Google Maps)</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>UIS</p>
+    </footer>
+
+    <script>
+        function cambiarImagen(imagen) {
+            document.getElementById('overlayImage').src = imagen;
+        }
+    </script>
+
+</body>
+</html>
