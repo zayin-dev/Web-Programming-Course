@@ -1,0 +1,8 @@
+JavaScript
+- 
+
+
+DOM
+
+Document Object MOdel
+Un estandar de JavaScript el cual, entre otras
