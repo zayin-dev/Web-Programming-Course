@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles_objects.css">
+</head>
+<body>
+    <div class="flex-container">
+        <p id="fruit-01"></p>
+        <p id="fruit-02"></p>
+    </div>
+
+    <script>
+        const fruit_01 = {
+            name: 'Apple',
+            color: 'Red',
+            price: 100
+        }
+
+        const fruit_02 = {
+            name: 'Banana',
+            color: 'Yellow',
+            price: 50,
+            fruit_02_data: function() {
+                return '<span class="name">' + this.name+ '</span>' + '<br/>' + this.color + '<br/>' + this.price;
+            }
+        }
+
+        document.getElementById('fruit-01').innerHTML = '<span class="name">' + fruit_01.name + '</span>' + '<br/>' + fruit_01.color + '<br/>' + fruit_01.price;
+        document.getElementById('fruit-02').innerHTML = fruit_02.fruit_02_data() + '<br/>';
+
+
+    </script>
+</body>
+</html>

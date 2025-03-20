@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./constructor_styles.css">
+</head>
+<body>
+    <p id="name-fruit"></p>
+    <p id="attributes"></p>
+    <p id="days"></p>
+
+    <script>
+        class Fruit {
+            constructor(name, color, country, days) {
+                this.name = name;
+                this.color = color;
+                this.country = country;
+                this.days = days;
+            }
+            daysSinceHarvest(harvest_day) {
+                return harvest_day - this.days;
+            }
+
+            fruitAttributes() {
+                return this.name + " is " + this.color + " and is from " + this.country;
+            }
+        }
+
+        let date = new Date();
+        let today = date.getDay();
+
+        let apple = new Fruit("Apple", "gold", "USA", 10);
+        let banana = new Fruit("Banana", "yellow", "India", 5);
+
+        document.getElementById("name-fruit").innerHTML = apple.name;
+        document.getElementById("attributes").innerHTML = apple.fruitAttributes();
+        document.getElementById("days").innerHTML = apple.daysSinceHarvest(today);
+
+        document.getElementById("name-fruit").innerHTML = banana.name;
+        document.getElementById("attributes").innerHTML = banana.fruitAttributes();
+        document.getElementById("days").innerHTML = banana.daysSinceHarvest(today);
+    </script>
+</body>
+</html>
