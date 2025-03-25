@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Producto de dos numeros</h1>
+
+    <button
+      onclick='document.getElementById("Product").innerHTML = product(a, b)'
+    >
+      Resultado
+    </button>
+    <p>El producto es:</p>
+    <p id="Product"></p>
+
+    <h1>Join</h1>
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      let text = fruits.join(",");
+    </script>
+    <button onclick='document.getElementById("Join").innerHTML = text'>
+      Resultado
+    </button>
+    <p id="Join"></p>
+
+    <h2>Factorial de un numero</h2>
+    <script>
+        const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        function factorial(value) {
+            let result = value;
+            for (let i = 1; i <= value; i++) {
+                result *= i;
+            }
+            return result;
+        }
+  
+        let nums_arr = nums.join(",");
+
+        const factorial = nums.map(factorial);
+        let fact_arr = factorial.join(",");
+    </script>
+    <button onclick='document.getElementById("Factorial").innerHTML = fact_arr'>
+      Resultado
+    </button>
+    <p id="Factorial"></p>
+
+    <h2>Closure function - contador de visitas</h2>
+    <script>
+        let counter = (function () {
+            let count = 0;
+            
+            return function () {
+                return count += 1;
+            };
+        })();
+
+        function count() {
+            document.getElementById("Counter").innerHTML = counter();
+        }
+    </script>
+    <button onclick='count()'> Resultado </button>
+    <p id="Counter"></p>
+
+    <h2>Filter - filtrar edades</h2>
+    <p>Filtrar las edades de distintas personas para buscar cuales tienen edades de 18 años o más</p>
+    <script>
+        const ages = [32, 33, 16, 40];
+
+        function checkAdult(age) {
+            return age >= 18;
+        }
+
+        function adults () {
+            const adults = ages.filter(checkAdult);
+            document.getElementById("Adults").innerHTML = adults.join(",");
+        }
+    </script>
+    <button onclick='adults()'> Resultado </button>
+    <p id="Adults"></p>
+  </body>
+</html>
