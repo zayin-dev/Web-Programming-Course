@@ -1,0 +1,6 @@
+
+
+- Para la proxima clase examen sobre event functions
+- Utilizar event functions para Factoriales
+
+- useRef, useState, Rey (?)
