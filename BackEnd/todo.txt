@@ -1,0 +1,5 @@
+1. Realizar un script que contenga un crud mediante EndPoint
+2. Transmitir parametros al servidor mediante la URL con axios
+3. Como transmitir parejas clave-valor mediante queries definidas en la URL o axios
+4. Como bajar archivos multimedia o documentos
+5. Como enviar un objeto en formato .json desde el servidor al cliente utilizando send.json
